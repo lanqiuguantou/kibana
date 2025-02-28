@@ -43,6 +43,8 @@ export const SolutionFilter: React.FunctionComponent<SolutionFilterProps> = ({
         button={
           <EuiFilterButton
             iconType="arrowDown"
+            isToggle={false}
+            isSelected={isPopoverOpen}
             hasActiveFilters={selectedValues.length > 0}
             numActiveFilters={selectedValues.length}
             numFilters={selectedValues.length}

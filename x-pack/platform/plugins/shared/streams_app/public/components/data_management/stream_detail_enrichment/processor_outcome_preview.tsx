@@ -125,6 +125,7 @@ const OutcomeControls = ({
   };
 
   const getFilterButtonPropsFor = (filterId: DocsFilterOption) => ({
+    isSelected: docsFilter === filterId,
     hasActiveFilters: docsFilter === filterId,
     onClick: () => onDocsFilterChange(filterId),
   });
